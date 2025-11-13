@@ -1,0 +1,20 @@
+.uebb-floating-box {
+  position:relative;
+}
+
+.uebb-floating-content {
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  transition: none;
+}
+
+.uebb-floating-content.uebb-floating-fix {
+  position: absolute;
+  z-index: 5;
+}
+
+.uebb-floating-content.uebb-floating-fix.uebb-floating-current-fix {
+  position: fixed;
+  top: 130px;
+}

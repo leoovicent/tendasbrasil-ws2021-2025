@@ -1,0 +1,376 @@
+0000.000 (0) Opened log file at time: Mon, 20 Oct 2025 21:09:33 +0000 on https://tendasbrasil.ind.br
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.25.5.0 WP: 6.8.3 PHP: 7.4.33 (litespeed, Linux us150-cp.valueserver.com.br 4.18.0-553.16.1.lve.1.el8.x86_64 #1 SMP Mon Sep 23 20:16:18 UTC 2024 x86_64) MySQL: 10.6.23-MariaDB-cll-lve (max packet size=536870912) WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 30.4M | 32M) multisite: N openssl: OpenSSL 1.1.1k  FIPS 25 Mar 2021 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.037 (0) Free space on disk containing Updraft's temporary directory: 1359837.5 MB / Free disk space in account: 9803.2 MB (4.3 % used)
+0000.041 (0) Tasks: Backup files: 0 (schedule: weekly) Backup DB: 1 (schedule: weekly)
+0000.043 (0) Semaphore (d, tendasbr_ws2025_uebb_wp_options) being initialised
+0000.045 (0) Requesting semaphore lock (d) (apparently not via scheduler)
+0000.046 (0) Set semaphore last lock (d) time to 2025-10-20 21:09:33
+0000.046 (0) Semaphore lock (d) complete
+0000.048 (0) Backup run: resumption=0, nonce=cbc976a481ee, file_nonce=cbc976a481ee begun at=1760994573 (0s ago), job type=backup
+0000.049 (0) Scheduling a resumption (1) after 300 seconds (1760994873) in case this run gets aborted
+0000.072 (0) This backup run is not intended for files - skipping
+0000.073 (0) Beginning creation of database dump (WordPress DB)
+0000.074 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0000.075 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.088 (0) Output: /*M!999999\- enable the sandbox mode */ \n/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `tendasbr_ws2025_uebb_wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_s (truncated - 1619 bytes total)
+0000.089 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.097 (0) Table tendasbr_ws2025_uebb_wp_options: Total expected rows (via COUNT): 373
+0000.098 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.110 (0) Table tendasbr_ws2025_uebb_wp_options: Rows added in this batch (next record: 164031): 368 (uncompressed bytes in this segment=146141) in 0.02 seconds
+0000.115 (0) Table tendasbr_ws2025_uebb_wp_options: finishing file(s) (2, 31.4 KB)
+0000.118 (0) Table tendasbr_ws2025_uebb_wp_users: Total expected rows (via COUNT): 2
+0000.119 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.120 (0) Table tendasbr_ws2025_uebb_wp_users: Rows added in this batch (next record: 6): 2 (uncompressed bytes in this segment=1441) in 0.00 seconds
+0000.123 (0) Table tendasbr_ws2025_uebb_wp_users: finishing file(s) (2, 0.7 KB)
+0000.126 (0) Table tendasbr_ws2025_uebb_wp_usermeta: Total expected rows (via COUNT): 48
+0000.127 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.129 (0) Table tendasbr_ws2025_uebb_wp_usermeta: Rows added in this batch (next record: 174): 48 (uncompressed bytes in this segment=4448) in 0.00 seconds
+0000.132 (0) Table tendasbr_ws2025_uebb_wp_usermeta: finishing file(s) (2, 1.7 KB)
+0000.136 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_actions: Total expected rows (via COUNT): 32
+0000.137 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.139 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_actions: Rows added in this batch (next record: 844): 32 (uncompressed bytes in this segment=17394) in 0.00 seconds
+0000.142 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_actions: finishing file(s) (2, 1.9 KB)
+0000.145 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0000.146 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=754) in 0.00 seconds
+0000.148 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.150 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_groups: Total expected rows (via COUNT): 2
+0000.150 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.152 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=827) in 0.00 seconds
+0000.153 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.156 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_logs: Total expected rows (via COUNT): 94
+0000.156 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.158 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_logs: Rows added in this batch (next record: 855): 94 (uncompressed bytes in this segment=8966) in 0.00 seconds
+0000.160 (0) Table tendasbr_ws2025_uebb_wp_actionscheduler_logs: finishing file(s) (2, 1.4 KB)
+0000.163 (0) Table tendasbr_ws2025_uebb_wp_commentmeta: Total expected rows (via COUNT): 0
+0000.165 (0) Table tendasbr_ws2025_uebb_wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=756) in 0.00 seconds
+0000.167 (0) Table tendasbr_ws2025_uebb_wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.169 (0) Table tendasbr_ws2025_uebb_wp_comments: Total expected rows (via COUNT): 0
+0000.170 (0) Table tendasbr_ws2025_uebb_wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1588) in 0.00 seconds
+0000.172 (0) Table tendasbr_ws2025_uebb_wp_comments: finishing file(s) (2, 0.5 KB)
+0000.175 (0) Table tendasbr_ws2025_uebb_wp_links: Total expected rows (via COUNT): 0
+0000.176 (0) Table tendasbr_ws2025_uebb_wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1149) in 0.00 seconds
+0000.178 (0) Table tendasbr_ws2025_uebb_wp_links: finishing file(s) (2, 0.5 KB)
+0000.188 (0) Table tendasbr_ws2025_uebb_wp_postmeta: Total expected rows (approximate): 2632
+0000.213 (0) Table tendasbr_ws2025_uebb_wp_postmeta: Rows added in this batch (next record: 4027): 2632 (uncompressed bytes in this segment=379102) in 0.03 seconds
+0000.216 (0) Table tendasbr_ws2025_uebb_wp_postmeta: finishing file(s) (2, 35.9 KB)
+0000.220 (0) Table tendasbr_ws2025_uebb_wp_posts: Total expected rows (via COUNT): 284
+0000.220 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.234 (0) Table tendasbr_ws2025_uebb_wp_posts: Rows added in this batch (next record: 617): 284 (uncompressed bytes in this segment=206925) in 0.02 seconds
+0000.237 (0) Table tendasbr_ws2025_uebb_wp_posts: finishing file(s) (2, 26.8 KB)
+0000.239 (0) Table tendasbr_ws2025_uebb_wp_term_relationships: Total expected rows (approximate): 10
+0000.241 (0) Table tendasbr_ws2025_uebb_wp_term_relationships: Rows added in this batch (next record: 100000): 10 (uncompressed bytes in this segment=973) in 0.00 seconds
+0000.242 (0) Table tendasbr_ws2025_uebb_wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.245 (0) Table tendasbr_ws2025_uebb_wp_term_taxonomy: Total expected rows (via COUNT): 29
+0000.245 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.247 (0) Table tendasbr_ws2025_uebb_wp_term_taxonomy: Rows added in this batch (next record: 36): 29 (uncompressed bytes in this segment=2326) in 0.00 seconds
+0000.250 (0) Table tendasbr_ws2025_uebb_wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0000.253 (0) Table tendasbr_ws2025_uebb_wp_termmeta: Total expected rows (via COUNT): 0
+0000.254 (0) Table tendasbr_ws2025_uebb_wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=729) in 0.00 seconds
+0000.256 (0) Table tendasbr_ws2025_uebb_wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.259 (0) Table tendasbr_ws2025_uebb_wp_terms: Total expected rows (via COUNT): 29
+0000.259 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.261 (0) Table tendasbr_ws2025_uebb_wp_terms: Rows added in this batch (next record: 36): 29 (uncompressed bytes in this segment=2606) in 0.00 seconds
+0000.263 (0) Table tendasbr_ws2025_uebb_wp_terms: finishing file(s) (2, 1.1 KB)
+0000.266 (0) Table tendasbr_ws2025_uebb_wp_aioseo_cache: Total expected rows (via COUNT): 0
+0000.267 (0) Table tendasbr_ws2025_uebb_wp_aioseo_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=808) in 0.00 seconds
+0000.269 (0) Table tendasbr_ws2025_uebb_wp_aioseo_cache: finishing file(s) (2, 0.4 KB)
+0000.272 (0) Table tendasbr_ws2025_uebb_wp_asenha_failed_logins: Total expected rows (via COUNT): 0
+0000.273 (0) Table tendasbr_ws2025_uebb_wp_asenha_failed_logins: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1002) in 0.00 seconds
+0000.275 (0) Table tendasbr_ws2025_uebb_wp_asenha_failed_logins: finishing file(s) (2, 0.4 KB)
+0000.287 (0) Table tendasbr_ws2025_uebb_wp_db7_forms: Total expected rows (via COUNT): 671
+0000.303 (0) Table tendasbr_ws2025_uebb_wp_db7_forms: Rows added in this batch (next record: 1038): 671 (uncompressed bytes in this segment=401558) in 0.03 seconds
+0000.306 (0) Table tendasbr_ws2025_uebb_wp_db7_forms: finishing file(s) (2, 63.1 KB)
+0000.311 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log: Total expected rows (via COUNT): 737
+0000.317 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log: Rows added in this batch (next record: 737): 737 (uncompressed bytes in this segment=42290) in 0.01 seconds
+0000.320 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log: finishing file(s) (2, 8.1 KB)
+0000.349 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log_meta: Total expected rows (approximate): 6047
+0000.485 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log_meta: Rows added in this batch (next record: 8107): 8107 (uncompressed bytes in this segment=6940490) in 0.16 seconds
+0000.488 (0) Table tendasbr_ws2025_uebb_wp_uap_action_log_meta: finishing file(s) (2, 110.8 KB)
+0000.497 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log: Total expected rows (via COUNT): 737
+0000.520 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log: Rows added in this batch (next record: 737): 737 (uncompressed bytes in this segment=630751) in 0.03 seconds
+0000.523 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log: finishing file(s) (2, 63.4 KB)
+0000.527 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log_response: Total expected rows (via COUNT): 0
+0000.527 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log_response: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=818) in 0.00 seconds
+0000.529 (0) Table tendasbr_ws2025_uebb_wp_uap_api_log_response: finishing file(s) (2, 0.4 KB)
+0000.532 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log: Total expected rows (via COUNT): 0
+0000.533 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1055) in 0.00 seconds
+0000.535 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log: finishing file(s) (2, 0.4 KB)
+0000.538 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log_meta: Total expected rows (via COUNT): 0
+0000.539 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=960) in 0.00 seconds
+0000.542 (0) Table tendasbr_ws2025_uebb_wp_uap_closure_log_meta: finishing file(s) (2, 0.4 KB)
+0000.545 (0) Table tendasbr_ws2025_uebb_wp_uap_options: Total expected rows (via COUNT): 46
+0000.545 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.547 (0) Table tendasbr_ws2025_uebb_wp_uap_options: Rows added in this batch (next record: 3970): 46 (uncompressed bytes in this segment=3678) in 0.00 seconds
+0000.549 (0) Table tendasbr_ws2025_uebb_wp_uap_options: finishing file(s) (2, 1.1 KB)
+0000.551 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_count: Total expected rows (via COUNT): 2
+0000.552 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.553 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_count: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=812) in 0.00 seconds
+0000.555 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_count: finishing file(s) (2, 0.4 KB)
+0000.557 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log: Total expected rows (via COUNT): 746
+0000.563 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log: Rows added in this batch (next record: 746): 746 (uncompressed bytes in this segment=34481) in 0.01 seconds
+0000.565 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log: finishing file(s) (2, 6.2 KB)
+0000.570 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log_meta: Total expected rows (approximate): 1855
+0000.585 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log_meta: Rows added in this batch (next record: 2229): 2229 (uncompressed bytes in this segment=143019) in 0.02 seconds
+0000.587 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_log_meta: finishing file(s) (2, 12.6 KB)
+0000.590 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_throttle_log: Total expected rows (via COUNT): 0
+0000.591 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_throttle_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=939) in 0.00 seconds
+0000.593 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_throttle_log: finishing file(s) (2, 0.4 KB)
+0000.602 (0) Table tendasbr_ws2025_uebb_wp_uap_tokens_log: Total expected rows (via COUNT): 737
+0000.617 (0) Table tendasbr_ws2025_uebb_wp_uap_tokens_log: Rows added in this batch (next record: 737): 737 (uncompressed bytes in this segment=554155) in 0.02 seconds
+0000.619 (0) Table tendasbr_ws2025_uebb_wp_uap_tokens_log: finishing file(s) (2, 55.8 KB)
+0000.623 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log: Total expected rows (via COUNT): 745
+0000.629 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log: Rows added in this batch (next record: 745): 745 (uncompressed bytes in this segment=39726) in 0.01 seconds
+0000.631 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log: finishing file(s) (2, 8.2 KB)
+0000.653 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log_meta: Total expected rows (approximate): 4776
+0000.752 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log_meta: Rows added in this batch (next record: 5968): 5968 (uncompressed bytes in this segment=4059404) in 0.12 seconds
+0000.755 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_log_meta: finishing file(s) (2, 142.5 KB)
+0000.758 (0) Table tendasbr_ws2025_uebb_wp_wfauditevents: Total expected rows (via COUNT): 19
+0000.759 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.761 (0) Table tendasbr_ws2025_uebb_wp_wfauditevents: Rows added in this batch (next record: 19): 19 (uncompressed bytes in this segment=21252) in 0.00 seconds
+0000.763 (0) Table tendasbr_ws2025_uebb_wp_wfauditevents: finishing file(s) (2, 2.6 KB)
+0000.765 (0) Table tendasbr_ws2025_uebb_wp_wfblockediplog: Total expected rows (approximate): 26
+0000.767 (0) Table tendasbr_ws2025_uebb_wp_wfblockediplog: Rows added in this batch (next record: 1000): 20 (uncompressed bytes in this segment=2124) in 0.00 seconds
+0000.768 (0) Table tendasbr_ws2025_uebb_wp_wfblockediplog: finishing file(s) (2, 0.6 KB)
+0000.771 (0) Table tendasbr_ws2025_uebb_wp_wfblocks7: Total expected rows (via COUNT): 0
+0000.772 (0) Table tendasbr_ws2025_uebb_wp_wfblocks7: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=991) in 0.00 seconds
+0000.774 (0) Table tendasbr_ws2025_uebb_wp_wfblocks7: finishing file(s) (2, 0.5 KB)
+0000.776 (0) Table tendasbr_ws2025_uebb_wp_wfconfig: Total expected rows (approximate): 281
+0000.859 (0) Table tendasbr_ws2025_uebb_wp_wfconfig: Rows added in this batch (next record: 1000): 284 (uncompressed bytes in this segment=1302084) in 0.08 seconds
+0000.862 (0) Table tendasbr_ws2025_uebb_wp_wfconfig: finishing file(s) (2, 681.1 KB)
+0000.864 (0) Table tendasbr_ws2025_uebb_wp_wfcrawlers: Total expected rows (approximate): 1
+0000.866 (0) Table tendasbr_ws2025_uebb_wp_wfcrawlers: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=899) in 0.00 seconds
+0000.867 (0) Table tendasbr_ws2025_uebb_wp_wfcrawlers: finishing file(s) (2, 0.5 KB)
+0000.870 (0) Table tendasbr_ws2025_uebb_wp_wffilechanges: Total expected rows (approximate): 0
+0000.870 (0) Table tendasbr_ws2025_uebb_wp_wffilechanges: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=608) in 0.00 seconds
+0000.872 (0) Table tendasbr_ws2025_uebb_wp_wffilechanges: finishing file(s) (2, 0.3 KB)
+0000.874 (0) Table tendasbr_ws2025_uebb_wp_wffilemods: Total expected rows (approximate): 8283
+0001.032 (0) Table tendasbr_ws2025_uebb_wp_wffilemods: binary mysqldump finished (writes: 39, bytes 3013687, return code 0) in 0.16 seconds
+0001.034 (0) Table tendasbr_ws2025_uebb_wp_wffilemods: finishing file(s) (1, 946.1 KB)
+0001.038 (0) Table tendasbr_ws2025_uebb_wp_wfhits: Total expected rows (via COUNT): 30
+0001.038 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.041 (0) Table tendasbr_ws2025_uebb_wp_wfhits: Rows added in this batch (next record: 1696): 30 (uncompressed bytes in this segment=11362) in 0.00 seconds
+0001.043 (0) Table tendasbr_ws2025_uebb_wp_wfhits: finishing file(s) (2, 1.8 KB)
+0001.046 (0) Table tendasbr_ws2025_uebb_wp_wfhoover: Total expected rows (via COUNT): 0
+0001.048 (0) Table tendasbr_ws2025_uebb_wp_wfhoover: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=671) in 0.00 seconds
+0001.050 (0) Table tendasbr_ws2025_uebb_wp_wfhoover: finishing file(s) (2, 0.4 KB)
+0001.053 (0) Table tendasbr_ws2025_uebb_wp_wfissues: Total expected rows (via COUNT): 9
+0001.054 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.056 (0) Table tendasbr_ws2025_uebb_wp_wfissues: Rows added in this batch (next record: 2231): 9 (uncompressed bytes in this segment=14261) in 0.00 seconds
+0001.058 (0) Table tendasbr_ws2025_uebb_wp_wfissues: finishing file(s) (2, 3.3 KB)
+0001.060 (0) Table tendasbr_ws2025_uebb_wp_wfknownfilelist: Total expected rows (approximate): 10130
+0001.137 (0) Table tendasbr_ws2025_uebb_wp_wfknownfilelist: binary mysqldump finished (writes: 31, bytes 1890399, return code 0) in 0.08 seconds
+0001.139 (0) Table tendasbr_ws2025_uebb_wp_wfknownfilelist: finishing file(s) (1, 138.4 KB)
+0001.141 (0) Table tendasbr_ws2025_uebb_wp_wflivetraffichuman: Total expected rows (approximate): 0
+0001.142 (0) Table tendasbr_ws2025_uebb_wp_wflivetraffichuman: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=804) in 0.00 seconds
+0001.144 (0) Table tendasbr_ws2025_uebb_wp_wflivetraffichuman: finishing file(s) (2, 0.4 KB)
+0001.146 (0) Table tendasbr_ws2025_uebb_wp_wflocs: Total expected rows (approximate): 0
+0001.147 (0) Table tendasbr_ws2025_uebb_wp_wflocs: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=834) in 0.00 seconds
+0001.149 (0) Table tendasbr_ws2025_uebb_wp_wflocs: finishing file(s) (2, 0.4 KB)
+0001.152 (0) Table tendasbr_ws2025_uebb_wp_wflogins: Total expected rows (via COUNT): 240
+0001.152 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.157 (0) Table tendasbr_ws2025_uebb_wp_wflogins: Rows added in this batch (next record: 240): 240 (uncompressed bytes in this segment=52596) in 0.01 seconds
+0001.160 (0) Table tendasbr_ws2025_uebb_wp_wflogins: finishing file(s) (2, 6.4 KB)
+0001.164 (0) Table tendasbr_ws2025_uebb_wp_wfls_2fa_secrets: Total expected rows (via COUNT): 0
+0001.166 (0) Table tendasbr_ws2025_uebb_wp_wfls_2fa_secrets: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=837) in 0.00 seconds
+0001.168 (0) Table tendasbr_ws2025_uebb_wp_wfls_2fa_secrets: finishing file(s) (2, 0.4 KB)
+0001.171 (0) Table tendasbr_ws2025_uebb_wp_wfls_role_counts: Total expected rows (approximate): 0
+0001.172 (0) Table tendasbr_ws2025_uebb_wp_wfls_role_counts: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=702) in 0.00 seconds
+0001.174 (0) Table tendasbr_ws2025_uebb_wp_wfls_role_counts: finishing file(s) (2, 0.4 KB)
+0001.177 (0) Table tendasbr_ws2025_uebb_wp_wfls_settings: Total expected rows (approximate): 19
+0001.179 (0) Table tendasbr_ws2025_uebb_wp_wfls_settings: Rows added in this batch (next record: 1000): 19 (uncompressed bytes in this segment=1811) in 0.00 seconds
+0001.181 (0) Table tendasbr_ws2025_uebb_wp_wfls_settings: finishing file(s) (2, 0.9 KB)
+0001.184 (0) Table tendasbr_ws2025_uebb_wp_wfnotifications: Total expected rows (approximate): 0
+0001.184 (0) Table tendasbr_ws2025_uebb_wp_wfnotifications: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=768) in 0.00 seconds
+0001.186 (0) Table tendasbr_ws2025_uebb_wp_wfnotifications: finishing file(s) (2, 0.4 KB)
+0001.191 (0) Table tendasbr_ws2025_uebb_wp_wfpendingissues: Total expected rows (via COUNT): 0
+0001.192 (0) Table tendasbr_ws2025_uebb_wp_wfpendingissues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1028) in 0.00 seconds
+0001.195 (0) Table tendasbr_ws2025_uebb_wp_wfpendingissues: finishing file(s) (2, 0.5 KB)
+0001.198 (0) Table tendasbr_ws2025_uebb_wp_wfreversecache: Total expected rows (approximate): 0
+0001.199 (0) Table tendasbr_ws2025_uebb_wp_wfreversecache: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=800) in 0.00 seconds
+0001.202 (0) Table tendasbr_ws2025_uebb_wp_wfreversecache: finishing file(s) (2, 0.4 KB)
+0001.205 (0) Table tendasbr_ws2025_uebb_wp_wfsecurityevents: Total expected rows (via COUNT): 0
+0001.207 (0) Table tendasbr_ws2025_uebb_wp_wfsecurityevents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=838) in 0.00 seconds
+0001.209 (0) Table tendasbr_ws2025_uebb_wp_wfsecurityevents: finishing file(s) (2, 0.4 KB)
+0001.213 (0) Table tendasbr_ws2025_uebb_wp_wfsnipcache: Total expected rows (via COUNT): 0
+0001.215 (0) Table tendasbr_ws2025_uebb_wp_wfsnipcache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=874) in 0.00 seconds
+0001.217 (0) Table tendasbr_ws2025_uebb_wp_wfsnipcache: finishing file(s) (2, 0.4 KB)
+0001.221 (0) Table tendasbr_ws2025_uebb_wp_wfstatus: Total expected rows (via COUNT): 975
+0001.231 (0) Table tendasbr_ws2025_uebb_wp_wfstatus: Rows added in this batch (next record: 17535): 975 (uncompressed bytes in this segment=107208) in 0.01 seconds
+0001.234 (0) Table tendasbr_ws2025_uebb_wp_wfstatus: finishing file(s) (2, 16.9 KB)
+0001.237 (0) Table tendasbr_ws2025_uebb_wp_wftrafficrates: Total expected rows (approximate): 0
+0001.238 (0) Table tendasbr_ws2025_uebb_wp_wftrafficrates: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=722) in 0.00 seconds
+0001.240 (0) Table tendasbr_ws2025_uebb_wp_wftrafficrates: finishing file(s) (2, 0.4 KB)
+0001.244 (0) Table tendasbr_ws2025_uebb_wp_wfwaffailures: Total expected rows (via COUNT): 0
+0001.245 (0) Table tendasbr_ws2025_uebb_wp_wfwaffailures: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0001.247 (0) Table tendasbr_ws2025_uebb_wp_wfwaffailures: finishing file(s) (2, 0.4 KB)
+0001.250 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 47
+0001.251 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.253 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_debug_events: Rows added in this batch (next record: 47): 47 (uncompressed bytes in this segment=15687) in 0.00 seconds
+0001.255 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_debug_events: finishing file(s) (2, 1.5 KB)
+0001.259 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 1
+0001.260 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.262 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=851) in 0.00 seconds
+0001.264 (0) Table tendasbr_ws2025_uebb_wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.4 KB)
+0001.617 (0) Table tendasbr_ws2025_uebb_wp_uap_action_logs_view: Rows added in this batch (next record: 1): 0 (uncompressed bytes in this segment=1861) in 0.00 seconds
+0001.620 (0) Table tendasbr_ws2025_uebb_wp_uap_action_logs_view: finishing file(s) (2, 0.6 KB)
+0001.625 (0) Table tendasbr_ws2025_uebb_wp_uap_api_logs_view: Rows added in this batch (next record: 1): 0 (uncompressed bytes in this segment=3619) in 0.00 seconds
+0001.627 (0) Table tendasbr_ws2025_uebb_wp_uap_api_logs_view: finishing file(s) (2, 0.8 KB)
+0001.630 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_logs_view: Rows added in this batch (next record: 1): 0 (uncompressed bytes in this segment=1138) in 0.00 seconds
+0001.633 (0) Table tendasbr_ws2025_uebb_wp_uap_recipe_logs_view: finishing file(s) (2, 0.4 KB)
+0001.636 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_logs_view: Rows added in this batch (next record: 1): 0 (uncompressed bytes in this segment=1972) in 0.00 seconds
+0001.638 (0) Table tendasbr_ws2025_uebb_wp_uap_trigger_logs_view: finishing file(s) (2, 0.6 KB)
+0001.640 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_options.table.tmpr164032.gz (1/64/fopen): adding to final database dump
+0001.642 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_options.table.gz (2/64/fopen): adding to final database dump
+0001.642 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_users.table.tmpr7.gz (3/64/fopen): adding to final database dump
+0001.643 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_users.table.gz (4/64/fopen): adding to final database dump
+0001.644 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_usermeta.table.tmpr175.gz (5/64/fopen): adding to final database dump
+0001.644 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_usermeta.table.gz (6/64/fopen): adding to final database dump
+0001.645 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_actions.table.tmpr845.gz (7/64/fopen): adding to final database dump
+0001.646 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_actions.table.gz (8/64/fopen): adding to final database dump
+0001.646 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_claims.table.tmpr0.gz (9/64/fopen): adding to final database dump
+0001.647 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_claims.table.gz (10/64/fopen): adding to final database dump
+0001.647 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_groups.table.tmpr3.gz (11/64/fopen): adding to final database dump
+0001.648 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_groups.table.gz (12/64/fopen): adding to final database dump
+0001.649 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_logs.table.tmpr856.gz (13/64/fopen): adding to final database dump
+0001.649 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_actionscheduler_logs.table.gz (14/64/fopen): adding to final database dump
+0001.650 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_commentmeta.table.tmpr0.gz (15/64/fopen): adding to final database dump
+0001.650 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_commentmeta.table.gz (16/64/fopen): adding to final database dump
+0001.651 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_comments.table.tmpr0.gz (17/64/fopen): adding to final database dump
+0001.651 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_comments.table.gz (18/64/fopen): adding to final database dump
+0001.652 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_links.table.tmpr0.gz (19/64/fopen): adding to final database dump
+0001.653 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_links.table.gz (20/64/fopen): adding to final database dump
+0001.653 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_postmeta.table.tmpr4028.gz (21/64/fopen): adding to final database dump
+0001.655 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_postmeta.table.gz (22/64/fopen): adding to final database dump
+0001.656 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_posts.table.tmpr618.gz (23/64/fopen): adding to final database dump
+0001.657 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_posts.table.gz (24/64/fopen): adding to final database dump
+0001.658 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_term_relationships.table.tmpr100001.gz (25/64/fopen): adding to final database dump
+0001.658 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_term_relationships.table.gz (26/64/fopen): adding to final database dump
+0001.659 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_term_taxonomy.table.tmpr37.gz (27/64/fopen): adding to final database dump
+0001.660 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_term_taxonomy.table.gz (28/64/fopen): adding to final database dump
+0001.660 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_termmeta.table.tmpr0.gz (29/64/fopen): adding to final database dump
+0001.661 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_termmeta.table.gz (30/64/fopen): adding to final database dump
+0001.662 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_terms.table.tmpr37.gz (31/64/fopen): adding to final database dump
+0001.662 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_terms.table.gz (32/64/fopen): adding to final database dump
+0001.663 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_aioseo_cache.table.tmpr0.gz (33/64/fopen): adding to final database dump
+0001.664 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_aioseo_cache.table.gz (34/64/fopen): adding to final database dump
+0001.664 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_asenha_failed_logins.table.tmpr0.gz (35/64/fopen): adding to final database dump
+0001.665 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_asenha_failed_logins.table.gz (36/64/fopen): adding to final database dump
+0001.665 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_db7_forms.table.tmpr1039.gz (37/64/fopen): adding to final database dump
+0001.669 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_db7_forms.table.gz (38/64/fopen): adding to final database dump
+0001.669 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_log.table.tmpr738.gz (39/64/fopen): adding to final database dump
+0001.670 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_log.table.gz (40/64/fopen): adding to final database dump
+0001.671 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_log_meta.table.tmpr8108.gz (41/64/fopen): adding to final database dump
+0001.681 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_log_meta.table.gz (42/64/fopen): adding to final database dump
+0001.681 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_log.table.tmpr738.gz (43/64/fopen): adding to final database dump
+0001.685 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_log.table.gz (44/64/fopen): adding to final database dump
+0001.685 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_log_response.table.tmpr0.gz (45/64/fopen): adding to final database dump
+0001.686 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_log_response.table.gz (46/64/fopen): adding to final database dump
+0001.686 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_closure_log.table.tmpr0.gz (47/64/fopen): adding to final database dump
+0001.687 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_closure_log.table.gz (48/64/fopen): adding to final database dump
+0001.688 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_closure_log_meta.table.tmpr0.gz (49/64/fopen): adding to final database dump
+0001.688 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_closure_log_meta.table.gz (50/64/fopen): adding to final database dump
+0001.689 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_options.table.tmpr3971.gz (51/64/fopen): adding to final database dump
+0001.690 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_options.table.gz (52/64/fopen): adding to final database dump
+0001.690 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_count.table.tmpr3.gz (53/64/fopen): adding to final database dump
+0001.691 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_count.table.gz (54/64/fopen): adding to final database dump
+0001.691 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_log.table.tmpr747.gz (55/64/fopen): adding to final database dump
+0001.692 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_log.table.gz (56/64/fopen): adding to final database dump
+0001.693 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_log_meta.table.tmpr2230.gz (57/64/fopen): adding to final database dump
+0001.694 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_log_meta.table.gz (58/64/fopen): adding to final database dump
+0001.694 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_throttle_log.table.tmpr0.gz (59/64/fopen): adding to final database dump
+0001.695 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_throttle_log.table.gz (60/64/fopen): adding to final database dump
+0001.695 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_tokens_log.table.tmpr738.gz (61/64/fopen): adding to final database dump
+0001.698 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_tokens_log.table.gz (62/64/fopen): adding to final database dump
+0001.698 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_log.table.tmpr746.gz (63/64/fopen): adding to final database dump
+0001.699 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_log.table.gz (64/64/fopen): adding to final database dump
+0001.700 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_log_meta.table.tmpr5969.gz (65/64/fopen): adding to final database dump
+0001.711 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_log_meta.table.gz (66/64/fopen): adding to final database dump
+0001.711 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfauditevents.table.tmpr20.gz (67/64/fopen): adding to final database dump
+0001.712 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfauditevents.table.gz (68/64/fopen): adding to final database dump
+0001.713 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfblockediplog.table.tmpr1001.gz (69/64/fopen): adding to final database dump
+0001.713 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfblockediplog.table.gz (70/64/fopen): adding to final database dump
+0001.714 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfblocks7.table.tmpr0.gz (71/64/fopen): adding to final database dump
+0001.715 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfblocks7.table.gz (72/64/fopen): adding to final database dump
+0001.715 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfconfig.table.tmpr1001.gz (73/64/fopen): adding to final database dump
+0001.736 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfconfig.table.gz (74/64/fopen): adding to final database dump
+0001.737 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfcrawlers.table.tmpr1001.gz (75/64/fopen): adding to final database dump
+0001.737 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfcrawlers.table.gz (76/64/fopen): adding to final database dump
+0001.738 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wffilechanges.table.tmpr1.gz (77/64/fopen): adding to final database dump
+0001.739 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wffilechanges.table.gz (78/64/fopen): adding to final database dump
+0001.739 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wffilemods.table.gz (79/64/fopen): adding to final database dump
+0001.772 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfhits.table.tmpr1697.gz (80/64/fopen): adding to final database dump
+0001.773 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfhits.table.gz (81/64/fopen): adding to final database dump
+0001.774 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfhoover.table.tmpr0.gz (82/64/fopen): adding to final database dump
+0001.774 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfhoover.table.gz (83/64/fopen): adding to final database dump
+0001.775 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfissues.table.tmpr2232.gz (84/64/fopen): adding to final database dump
+0001.776 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfissues.table.gz (85/64/fopen): adding to final database dump
+0001.776 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfknownfilelist.table.gz (86/64/fopen): adding to final database dump
+0001.782 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflivetraffichuman.table.tmpr1.gz (87/64/fopen): adding to final database dump
+0001.783 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflivetraffichuman.table.gz (88/64/fopen): adding to final database dump
+0001.783 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflocs.table.tmpr1.gz (89/64/fopen): adding to final database dump
+0001.784 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflocs.table.gz (90/64/fopen): adding to final database dump
+0001.784 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflogins.table.tmpr241.gz (91/64/fopen): adding to final database dump
+0001.785 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wflogins.table.gz (92/64/fopen): adding to final database dump
+0001.786 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_2fa_secrets.table.tmpr0.gz (93/64/fopen): adding to final database dump
+0001.787 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_2fa_secrets.table.gz (94/64/fopen): adding to final database dump
+0001.787 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_role_counts.table.tmpr1.gz (95/64/fopen): adding to final database dump
+0001.789 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_role_counts.table.gz (96/64/fopen): adding to final database dump
+0001.789 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_settings.table.tmpr1001.gz (97/64/fopen): adding to final database dump
+0001.790 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfls_settings.table.gz (98/64/fopen): adding to final database dump
+0001.791 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfnotifications.table.tmpr1.gz (99/64/fopen): adding to final database dump
+0001.792 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfnotifications.table.gz (100/64/fopen): adding to final database dump
+0001.793 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfpendingissues.table.tmpr0.gz (101/64/fopen): adding to final database dump
+0001.794 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfpendingissues.table.gz (102/64/fopen): adding to final database dump
+0001.795 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfreversecache.table.tmpr1001.gz (103/64/fopen): adding to final database dump
+0001.796 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfreversecache.table.gz (104/64/fopen): adding to final database dump
+0001.796 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfsecurityevents.table.tmpr0.gz (105/64/fopen): adding to final database dump
+0001.797 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfsecurityevents.table.gz (106/64/fopen): adding to final database dump
+0001.798 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfsnipcache.table.tmpr0.gz (107/64/fopen): adding to final database dump
+0001.798 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfsnipcache.table.gz (108/64/fopen): adding to final database dump
+0001.799 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfstatus.table.tmpr17536.gz (109/64/fopen): adding to final database dump
+0001.800 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfstatus.table.gz (110/64/fopen): adding to final database dump
+0001.801 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wftrafficrates.table.tmpr1.gz (111/64/fopen): adding to final database dump
+0001.802 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wftrafficrates.table.gz (112/64/fopen): adding to final database dump
+0001.802 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfwaffailures.table.tmpr0.gz (113/64/fopen): adding to final database dump
+0001.803 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wfwaffailures.table.gz (114/64/fopen): adding to final database dump
+0001.803 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wpmailsmtp_debug_events.table.tmpr48.gz (115/64/fopen): adding to final database dump
+0001.804 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wpmailsmtp_debug_events.table.gz (116/64/fopen): adding to final database dump
+0001.804 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wpmailsmtp_tasks_meta.table.tmpr2.gz (117/64/fopen): adding to final database dump
+0001.805 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_wpmailsmtp_tasks_meta.table.gz (118/64/fopen): adding to final database dump
+0001.806 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_logs_view.table-view.tmp.gz (119/64/fopen): adding to final database dump
+0001.806 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_action_logs_view.table.gz (120/64/fopen): adding to final database dump
+0001.807 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_logs_view.table-view.tmp.gz (121/64/fopen): adding to final database dump
+0001.807 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_api_logs_view.table.gz (122/64/fopen): adding to final database dump
+0001.808 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_logs_view.table-view.tmp.gz (123/64/fopen): adding to final database dump
+0001.808 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_recipe_logs_view.table.gz (124/64/fopen): adding to final database dump
+0001.809 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_logs_view.table-view.tmp.gz (125/64/fopen): adding to final database dump
+0001.810 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db-table-tendasbr_ws2025_uebb_wp_uap_trigger_logs_view.table.gz (126/64/fopen): adding to final database dump
+0001.814 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db.gz: finished writing out complete database file (2387.4 KB)
+0001.846 (0) Total database tables backed up: 64 (backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db.gz, size: 2444785, sha1: 7abb801d251a0b69de444e1b153ad6cbcd6bbd13, sha256: 01c908e3f170b0e6c46282f5a4556d7fca599f7b224f8daaba51518e8f8dca31)
+0001.849 (0) backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.849 (0) Saving backup history. Total backup size: 2.3 MB
+0001.850 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.852 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0001.852 (0) No remote despatch: user chose no remote backup service
+0001.853 (0) Recording as successfully uploaded: backup_2025-10-20-1809_Tendas_Brasil_cbc976a481ee-db.gz
+0001.855 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=3, retain_db=5
+0001.855 (0) Number of backup sets in history: 1; groups (db): 1
+0001.856 (0) Examining (for databases) backup set with group_id=0, nonce=cbc976a481ee, datestamp=1760994573 (Oct 20 2025 21:09:33)
+0001.856 (0) This backup set is the backup set just made, so will not be deleted.
+0001.856 (0) Number of backup sets in history: 1; groups (files): 1
+0001.857 (0) Examining (for files) backup set with nonce=cbc976a481ee, datestamp=1760994573 (Oct 20 2025 21:09:33)
+0001.857 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.858 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0001.859 (0) Resume backup (cbc976a481ee, 0): finish run
+0001.860 (0) Decremented the semaphore (d) by 1
+0001.861 (0) Semaphore (d) unlocked
+0001.861 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0001.863 (0) No email will/can be sent - the user has not configured an email address.
+0001.863 (0) The backup succeeded and is now complete
+0000.000 (1) Opened log file at time: Mon, 20 Oct 2025 21:22:25 +0000 on http://tendasbrasil.com.br
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.25.5.0 WP: 6.8.3 PHP: 8.3.26 (litespeed, Linux us150-cp.valueserver.com.br 4.18.0-553.16.1.lve.1.el8.x86_64 #1 SMP Mon Sep 23 20:16:18 UTC 2024 x86_64) MySQL: 10.6.23-MariaDB-cll-lve (max packet size=536870912) WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 92.1M | 95M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.047 (1) Free space on disk containing Updraft's temporary directory: 1360367.3 MB
+0000.049 (1) Requesting backup semaphore lock (cbc976a481ee)
+0000.050 (1) [Debug] Lock option (updraft_lock_cbc976a481ee, wp_options) was created in the database
+0000.050 (1) [Info] Lock (updraft_lock_cbc976a481ee, wp_options) acquired after initialising the database
+0000.051 (1) This backup task (cbc976a481ee) is either complete or began over 2 days ago: ending (1760995345.1032, ) (existing jobdata keys: )

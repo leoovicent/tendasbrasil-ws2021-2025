@@ -1,0 +1,11 @@
+[12-Nov-2025 21:31:07 UTC] PHP Fatal error:  Uncaught Error: Class "WPMailSMTP\Migrations" not found in /home/tendasbrasil/public_html/wp-content/plugins/wp-mail-smtp/src/Core.php:405
+Stack trace:
+#0 /home/tendasbrasil/public_html/wp-includes/class-wp-hook.php(324): WPMailSMTP\Core->get_migrations()
+#1 /home/tendasbrasil/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /home/tendasbrasil/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /home/tendasbrasil/public_html/wp-settings.php(578): do_action()
+#4 /home/tendasbrasil/public_html/wp-config.php(102): require_once('/home/tendasbra...')
+#5 /home/tendasbrasil/public_html/wp-load.php(50): require_once('/home/tendasbra...')
+#6 /home/tendasbrasil/public_html/wp-cron.php(46): require_once('/home/tendasbra...')
+#7 {main}
+  thrown in /home/tendasbrasil/public_html/wp-content/plugins/wp-mail-smtp/src/Core.php on line 405
