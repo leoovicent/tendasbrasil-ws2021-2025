@@ -10,7 +10,7 @@ $items = array(
 //array('title' => 'Tenda<br>Chapéu',        'image' => 'icone-tendas-chapeuchines',   'link' => '/produtos/tenda-chapeu',),
   array('title' => 'Tenda<br>Personalizada', 'image' => 'icone-tendas-personalizadas', 'link' => '/produtos/tenda-personalizada',),
   array('title' => 'Tenda<br>Sanitária',     'image' => 'icone-tendas-sanitarias',     'link' => '/produtos/tenda-sanitaria',),
-//array('title' => 'Kit<br>Ombrelone',       'image' => 'icone-tendas-ombrelone',      'link' => '/produtos/kit-ombrelone',),
+  array('title' => 'Kit<br>Ombrelone',       'image' => 'icone-tendas-ombrelone',      'link' => '/produtos/kit-ombrelone',),
 );
 ?>
 
