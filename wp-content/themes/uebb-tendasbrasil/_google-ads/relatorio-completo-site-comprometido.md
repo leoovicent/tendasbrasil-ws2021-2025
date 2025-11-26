@@ -25,7 +25,7 @@
 
 ---
 
-## 2. INVESTIGAÇÃO TÉCNICA INICIAL (18/11/2025)
+## 2. INVESTIGAÇÃO TÉCNICA INICIAL (18/11/2025) ---
 
 ### 2.1 Análise do Banco de Dados WordPress
 **Método:** Exportação completa via PHPMyAdmin
