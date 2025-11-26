@@ -1,0 +1,382 @@
+0000.000 (0) Opened log file at time: Thu, 20 Nov 2025 06:44:46 +0000 on https://tendasbrasil.com.br
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.25.8.0 WP: 6.8.3 PHP: 7.4.33 (litespeed, Linux us150-cp.valueserver.com.br 4.18.0-553.16.1.lve.1.el8.x86_64 #1 SMP Mon Sep 23 20:16:18 UTC 2024 x86_64) MySQL: 10.6.23-MariaDB-cll-lve (max packet size=536870912) WPLANG: pt_BR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 28.5M | 30M) multisite: N openssl: OpenSSL 1.1.1k  FIPS 25 Mar 2021 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.060 (0) Free space on disk containing Updraft's temporary directory: 910143.8 MB
+0000.064 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.065 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.068 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1763533656, seconds_ago=87430)
+0000.069 (0) Set semaphore last lock (fd) time to 2025-11-20 06:44:46
+0000.070 (0) Semaphore lock (fd) complete
+0000.072 (0) Backup run: resumption=0, nonce=72dc7bff4bf4, file_nonce=72dc7bff4bf4 begun at=1763621086 (0s ago), job type=backup
+0000.073 (0) Scheduling a resumption (1) after 300 seconds (1763621386) in case this run gets aborted
+0000.096 (0) Checking if we have a zip executable available
+0000.097 (0) Testing: /usr/bin/zip
+0000.102 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.103 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.103 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.104 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.104 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.111 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.112 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.125 (0) Working binary zip found: /usr/bin/zip
+0000.127 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.127 (0) Creation of backups of directories: beginning
+0000.129 (0) No backup of plugins: excluded by user's options
+0000.129 (0) No backup of themes: excluded by user's options
+0000.130 (0) No backup of uploads: excluded by user's options
+0000.130 (0) No backup of mu-plugins: excluded by user's options
+0000.131 (0) No backup of others: excluded by user's options
+0000.132 (0) Saving backup status to database (elements: 0)
+0000.137 (0) Beginning creation of database dump (WordPress DB)
+0000.137 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0000.138 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.152 (0) Output: /*M!999999\- enable the sandbox mode */ \n/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!4010 (truncated - 1493 bytes total)
+0000.152 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.171 (0) Table wp_options: Total expected rows (via COUNT): 417
+0000.171 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.183 (0) Table wp_options: Rows added in this batch (next record: 179527): 413 (uncompressed bytes in this segment=157795) in 0.01 seconds
+0000.186 (0) Table wp_options: finishing file(s) (2, 32.7 KB)
+0000.190 (0) Table wp_users: Total expected rows (via COUNT): 2
+0000.190 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.192 (0) Table wp_users: Rows added in this batch (next record: 6): 2 (uncompressed bytes in this segment=1294) in 0.00 seconds
+0000.195 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0000.200 (0) Table wp_usermeta: Total expected rows (via COUNT): 48
+0000.200 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.202 (0) Table wp_usermeta: Rows added in this batch (next record: 174): 48 (uncompressed bytes in this segment=4375) in 0.00 seconds
+0000.205 (0) Table wp_usermeta: finishing file(s) (2, 1.8 KB)
+0000.209 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 45
+0000.209 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.212 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 887): 45 (uncompressed bytes in this segment=23371) in 0.01 seconds
+0000.215 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 2.5 KB)
+0000.217 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0000.219 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=628) in 0.00 seconds
+0000.227 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.229 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 3
+0000.230 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.231 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=705) in 0.00 seconds
+0000.233 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.236 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 131
+0000.237 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.240 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 982): 131 (uncompressed bytes in this segment=12203) in 0.00 seconds
+0000.241 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1.9 KB)
+0000.245 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0000.246 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=630) in 0.00 seconds
+0000.248 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.251 (0) Table wp_comments: Total expected rows (via COUNT): 0
+0000.252 (0) Table wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1462) in 0.00 seconds
+0000.253 (0) Table wp_comments: finishing file(s) (2, 0.5 KB)
+0000.256 (0) Table wp_links: Total expected rows (via COUNT): 0
+0000.257 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1023) in 0.00 seconds
+0000.259 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0000.262 (0) Table wp_postmeta: Total expected rows (approximate): 2664
+0000.300 (0) Table wp_postmeta: Rows added in this batch (next record: 4099): 2664 (uncompressed bytes in this segment=387905) in 0.04 seconds
+0000.304 (0) Table wp_postmeta: finishing file(s) (2, 37.4 KB)
+0000.309 (0) Table wp_posts: Total expected rows (via COUNT): 307
+0000.310 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.350 (0) Table wp_posts: Rows added in this batch (next record: 656): 307 (uncompressed bytes in this segment=870113) in 0.04 seconds
+0000.353 (0) Table wp_posts: finishing file(s) (2, 137.4 KB)
+0000.356 (0) Table wp_term_relationships: Total expected rows (approximate): 10
+0000.357 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 10 (uncompressed bytes in this segment=826) in 0.00 seconds
+0000.359 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.362 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 26
+0000.363 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.364 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 36): 26 (uncompressed bytes in this segment=2086) in 0.00 seconds
+0000.366 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0000.371 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0000.372 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=603) in 0.00 seconds
+0000.374 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.378 (0) Table wp_terms: Total expected rows (via COUNT): 26
+0000.378 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.381 (0) Table wp_terms: Rows added in this batch (next record: 36): 26 (uncompressed bytes in this segment=2326) in 0.00 seconds
+0000.383 (0) Table wp_terms: finishing file(s) (2, 1 KB)
+0000.387 (0) Table wp_aioseo_cache: Total expected rows (via COUNT): 0
+0000.388 (0) Table wp_aioseo_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=682) in 0.00 seconds
+0000.390 (0) Table wp_aioseo_cache: finishing file(s) (2, 0.4 KB)
+0000.393 (0) Table wp_asenha_failed_logins: Total expected rows (via COUNT): 0
+0000.393 (0) Table wp_asenha_failed_logins: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=876) in 0.00 seconds
+0000.395 (0) Table wp_asenha_failed_logins: finishing file(s) (2, 0.4 KB)
+0000.401 (0) Table wp_db7_forms: Total expected rows (via COUNT): 713
+0000.418 (0) Table wp_db7_forms: Rows added in this batch (next record: 1080): 713 (uncompressed bytes in this segment=425687) in 0.02 seconds
+0000.421 (0) Table wp_db7_forms: finishing file(s) (2, 66.1 KB)
+0000.424 (0) Table wp_disclaimerInfor: Total expected rows (via COUNT): 0
+0000.425 (0) Table wp_disclaimerInfor: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=586) in 0.00 seconds
+0000.427 (0) Table wp_disclaimerInfor: finishing file(s) (2, 0.4 KB)
+0000.434 (0) Table wp_uap_action_log: Total expected rows (via COUNT): 779
+0000.441 (0) Table wp_uap_action_log: Rows added in this batch (next record: 779): 779 (uncompressed bytes in this segment=44495) in 0.01 seconds
+0000.444 (0) Table wp_uap_action_log: finishing file(s) (2, 8.5 KB)
+0000.446 (0) Table wp_uap_action_log_meta: Total expected rows (approximate): 8216
+0000.593 (0) Table wp_uap_action_log_meta: binary mysqldump finished (writes: 44, bytes 8114237, return code 0) in 0.15 seconds
+0000.595 (0) Table wp_uap_action_log_meta: finishing file(s) (1, 133.9 KB)
+0000.607 (0) Table wp_uap_api_log: Total expected rows (via COUNT): 779
+0000.632 (0) Table wp_uap_api_log: Rows added in this batch (next record: 779): 779 (uncompressed bytes in this segment=667764) in 0.03 seconds
+0000.635 (0) Table wp_uap_api_log: finishing file(s) (2, 66.6 KB)
+0000.638 (0) Table wp_uap_api_log_response: Total expected rows (via COUNT): 0
+0000.639 (0) Table wp_uap_api_log_response: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=692) in 0.00 seconds
+0000.641 (0) Table wp_uap_api_log_response: finishing file(s) (2, 0.4 KB)
+0000.643 (0) Table wp_uap_api_logs_view: Total expected rows (approximate): 0
+0000.644 (0) Table wp_uap_api_logs_view: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=1541) in 0.00 seconds
+0000.646 (0) Table wp_uap_api_logs_view: finishing file(s) (2, 0.5 KB)
+0000.649 (0) Table wp_uap_closure_log: Total expected rows (via COUNT): 0
+0000.650 (0) Table wp_uap_closure_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=929) in 0.00 seconds
+0000.651 (0) Table wp_uap_closure_log: finishing file(s) (2, 0.4 KB)
+0000.655 (0) Table wp_uap_closure_log_meta: Total expected rows (via COUNT): 0
+0000.656 (0) Table wp_uap_closure_log_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=834) in 0.00 seconds
+0000.658 (0) Table wp_uap_closure_log_meta: finishing file(s) (2, 0.4 KB)
+0000.661 (0) Table wp_uap_options: Total expected rows (via COUNT): 24
+0000.662 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.663 (0) Table wp_uap_options: Rows added in this batch (next record: 5180): 24 (uncompressed bytes in this segment=2548) in 0.00 seconds
+0000.665 (0) Table wp_uap_options: finishing file(s) (2, 1 KB)
+0000.668 (0) Table wp_uap_recipe_count: Total expected rows (via COUNT): 2
+0000.669 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.670 (0) Table wp_uap_recipe_count: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=665) in 0.00 seconds
+0000.671 (0) Table wp_uap_recipe_count: finishing file(s) (2, 0.4 KB)
+0000.675 (0) Table wp_uap_recipe_log: Total expected rows (via COUNT): 789
+0000.681 (0) Table wp_uap_recipe_log: Rows added in this batch (next record: 789): 789 (uncompressed bytes in this segment=41009) in 0.01 seconds
+0000.684 (0) Table wp_uap_recipe_log: finishing file(s) (2, 6.6 KB)
+0000.691 (0) Table wp_uap_recipe_log_meta: Total expected rows (approximate): 2357
+0000.708 (0) Table wp_uap_recipe_log_meta: Rows added in this batch (next record: 2357): 2357 (uncompressed bytes in this segment=151122) in 0.02 seconds
+0000.711 (0) Table wp_uap_recipe_log_meta: finishing file(s) (2, 13.2 KB)
+0000.714 (0) Table wp_uap_recipe_logs_view: Total expected rows (approximate): 0
+0000.716 (0) Table wp_uap_recipe_logs_view: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=909) in 0.00 seconds
+0000.718 (0) Table wp_uap_recipe_logs_view: finishing file(s) (2, 0.4 KB)
+0000.721 (0) Table wp_uap_recipe_throttle_log: Total expected rows (via COUNT): 0
+0000.722 (0) Table wp_uap_recipe_throttle_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=813) in 0.00 seconds
+0000.725 (0) Table wp_uap_recipe_throttle_log: finishing file(s) (2, 0.4 KB)
+0000.741 (0) Table wp_uap_tokens_log: Total expected rows (via COUNT): 779
+0000.757 (0) Table wp_uap_tokens_log: Rows added in this batch (next record: 779): 779 (uncompressed bytes in this segment=588011) in 0.03 seconds
+0000.760 (0) Table wp_uap_tokens_log: finishing file(s) (2, 58.8 KB)
+0000.764 (0) Table wp_uap_trigger_log: Total expected rows (via COUNT): 788
+0000.772 (0) Table wp_uap_trigger_log: Rows added in this batch (next record: 788): 788 (uncompressed bytes in this segment=41815) in 0.01 seconds
+0000.774 (0) Table wp_uap_trigger_log: finishing file(s) (2, 8.6 KB)
+0000.819 (0) Table wp_uap_trigger_log_meta: Total expected rows (approximate): 6008
+0000.923 (0) Table wp_uap_trigger_log_meta: Rows added in this batch (next record: 6312): 6312 (uncompressed bytes in this segment=4295978) in 0.15 seconds
+0000.926 (0) Table wp_uap_trigger_log_meta: finishing file(s) (2, 150.2 KB)
+0000.930 (0) Table wp_uap_trigger_logs_view: Total expected rows (approximate): 0
+0000.931 (0) Table wp_uap_trigger_logs_view: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=1364) in 0.00 seconds
+0000.933 (0) Table wp_uap_trigger_logs_view: finishing file(s) (2, 0.5 KB)
+0000.936 (0) Table wp_wfauditevents: Total expected rows (via COUNT): 19
+0000.937 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.939 (0) Table wp_wfauditevents: Rows added in this batch (next record: 19): 19 (uncompressed bytes in this segment=21105) in 0.00 seconds
+0000.941 (0) Table wp_wfauditevents: finishing file(s) (2, 2.6 KB)
+0000.943 (0) Table wp_wfblockediplog: Total expected rows (approximate): 45
+0000.945 (0) Table wp_wfblockediplog: Rows added in this batch (next record: 1000): 45 (uncompressed bytes in this segment=3530) in 0.00 seconds
+0000.947 (0) Table wp_wfblockediplog: finishing file(s) (2, 0.8 KB)
+0000.950 (0) Table wp_wfblocks7: Total expected rows (via COUNT): 0
+0000.951 (0) Table wp_wfblocks7: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=865) in 0.00 seconds
+0000.953 (0) Table wp_wfblocks7: finishing file(s) (2, 0.4 KB)
+0000.955 (0) Table wp_wfconfig: Total expected rows (approximate): 282
+0001.028 (0) Table wp_wfconfig: Rows added in this batch (next record: 1000): 285 (uncompressed bytes in this segment=1315696) in 0.07 seconds
+0001.031 (0) Table wp_wfconfig: finishing file(s) (2, 682.6 KB)
+0001.034 (0) Table wp_wfcrawlers: Total expected rows (approximate): 1
+0001.035 (0) Table wp_wfcrawlers: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=762) in 0.00 seconds
+0001.037 (0) Table wp_wfcrawlers: finishing file(s) (2, 0.5 KB)
+0001.040 (0) Table wp_wffilechanges: Total expected rows (approximate): 0
+0001.041 (0) Table wp_wffilechanges: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=482) in 0.00 seconds
+0001.043 (0) Table wp_wffilechanges: finishing file(s) (2, 0.3 KB)
+0001.045 (0) Table wp_wffilemods: Total expected rows (approximate): 10032
+0001.300 (0) Table wp_wffilemods: binary mysqldump finished (writes: 39, bytes 3059376, return code 0) in 0.25 seconds
+0001.302 (0) Table wp_wffilemods: finishing file(s) (1, 958.5 KB)
+0001.305 (0) Table wp_wfhits: Total expected rows (via COUNT): 192
+0001.305 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.312 (0) Table wp_wfhits: Rows added in this batch (next record: 1889): 192 (uncompressed bytes in this segment=86849) in 0.01 seconds
+0001.314 (0) Table wp_wfhits: finishing file(s) (2, 7.5 KB)
+0001.318 (0) Table wp_wfhoover: Total expected rows (via COUNT): 0
+0001.319 (0) Table wp_wfhoover: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=545) in 0.00 seconds
+0001.321 (0) Table wp_wfhoover: finishing file(s) (2, 0.4 KB)
+0001.324 (0) Table wp_wfissues: Total expected rows (via COUNT): 3
+0001.325 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.326 (0) Table wp_wfissues: Rows added in this batch (next record: 2290): 3 (uncompressed bytes in this segment=4522) in 0.00 seconds
+0001.328 (0) Table wp_wfissues: finishing file(s) (2, 1.8 KB)
+0001.330 (0) Table wp_wfknownfilelist: Total expected rows (approximate): 9662
+0001.405 (0) Table wp_wfknownfilelist: binary mysqldump finished (writes: 31, bytes 1921573, return code 0) in 0.07 seconds
+0001.407 (0) Table wp_wfknownfilelist: finishing file(s) (1, 140.2 KB)
+0001.409 (0) Table wp_wflivetraffichuman: Total expected rows (approximate): 0
+0001.413 (0) Table wp_wflivetraffichuman: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=678) in 0.00 seconds
+0001.415 (0) Table wp_wflivetraffichuman: finishing file(s) (2, 0.4 KB)
+0001.418 (0) Table wp_wflocs: Total expected rows (approximate): 0
+0001.419 (0) Table wp_wflocs: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=708) in 0.00 seconds
+0001.421 (0) Table wp_wflocs: finishing file(s) (2, 0.4 KB)
+0001.424 (0) Table wp_wflogins: Total expected rows (via COUNT): 273
+0001.424 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.434 (0) Table wp_wflogins: Rows added in this batch (next record: 273): 273 (uncompressed bytes in this segment=59324) in 0.01 seconds
+0001.436 (0) Table wp_wflogins: finishing file(s) (2, 7.2 KB)
+0001.440 (0) Table wp_wfls_2fa_secrets: Total expected rows (via COUNT): 0
+0001.441 (0) Table wp_wfls_2fa_secrets: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=711) in 0.00 seconds
+0001.443 (0) Table wp_wfls_2fa_secrets: finishing file(s) (2, 0.4 KB)
+0001.446 (0) Table wp_wfls_role_counts: Total expected rows (approximate): 0
+0001.447 (0) Table wp_wfls_role_counts: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=576) in 0.00 seconds
+0001.449 (0) Table wp_wfls_role_counts: finishing file(s) (2, 0.4 KB)
+0001.452 (0) Table wp_wfls_settings: Total expected rows (approximate): 19
+0001.453 (0) Table wp_wfls_settings: Rows added in this batch (next record: 1000): 19 (uncompressed bytes in this segment=1664) in 0.00 seconds
+0001.454 (0) Table wp_wfls_settings: finishing file(s) (2, 0.8 KB)
+0001.457 (0) Table wp_wfnotifications: Total expected rows (approximate): 0
+0001.458 (0) Table wp_wfnotifications: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=642) in 0.00 seconds
+0001.460 (0) Table wp_wfnotifications: finishing file(s) (2, 0.4 KB)
+0001.464 (0) Table wp_wfpendingissues: Total expected rows (via COUNT): 0
+0001.465 (0) Table wp_wfpendingissues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=902) in 0.00 seconds
+0001.467 (0) Table wp_wfpendingissues: finishing file(s) (2, 0.4 KB)
+0001.469 (0) Table wp_wfreversecache: Total expected rows (approximate): 1
+0001.471 (0) Table wp_wfreversecache: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=663) in 0.00 seconds
+0001.473 (0) Table wp_wfreversecache: finishing file(s) (2, 0.4 KB)
+0001.476 (0) Table wp_wfsecurityevents: Total expected rows (via COUNT): 0
+0001.476 (0) Table wp_wfsecurityevents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=712) in 0.00 seconds
+0001.478 (0) Table wp_wfsecurityevents: finishing file(s) (2, 0.4 KB)
+0001.481 (0) Table wp_wfsnipcache: Total expected rows (via COUNT): 0
+0001.482 (0) Table wp_wfsnipcache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=748) in 0.00 seconds
+0001.484 (0) Table wp_wfsnipcache: finishing file(s) (2, 0.4 KB)
+0001.487 (0) Table wp_wfstatus: Total expected rows (approximate): 1000
+0001.498 (0) Table wp_wfstatus: Rows added in this batch (next record: 18826): 1000 (uncompressed bytes in this segment=109228) in 0.01 seconds
+0001.501 (0) Table wp_wfstatus: finishing file(s) (2, 17.7 KB)
+0001.503 (0) Table wp_wftrafficrates: Total expected rows (approximate): 0
+0001.504 (0) Table wp_wftrafficrates: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=596) in 0.00 seconds
+0001.506 (0) Table wp_wftrafficrates: finishing file(s) (2, 0.4 KB)
+0001.509 (0) Table wp_wfwaffailures: Total expected rows (via COUNT): 0
+0001.510 (0) Table wp_wfwaffailures: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=559) in 0.00 seconds
+0001.512 (0) Table wp_wfwaffailures: finishing file(s) (2, 0.4 KB)
+0001.515 (0) Table wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 47
+0001.515 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.517 (0) Table wp_wpmailsmtp_debug_events: Rows added in this batch (next record: 47): 47 (uncompressed bytes in this segment=15587) in 0.00 seconds
+0001.519 (0) Table wp_wpmailsmtp_debug_events: finishing file(s) (2, 1.5 KB)
+0001.523 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 1
+0001.524 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.525 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=704) in 0.00 seconds
+0001.528 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.4 KB)
+0001.529 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_options.table.tmpr179528.gz (1/64/fopen): adding to final database dump
+0001.531 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_options.table.gz (2/64/fopen): adding to final database dump
+0001.532 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_users.table.tmpr7.gz (3/64/fopen): adding to final database dump
+0001.532 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_users.table.gz (4/64/fopen): adding to final database dump
+0001.533 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_usermeta.table.tmpr175.gz (5/64/fopen): adding to final database dump
+0001.534 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_usermeta.table.gz (6/64/fopen): adding to final database dump
+0001.534 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_actions.table.tmpr888.gz (7/64/fopen): adding to final database dump
+0001.535 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_actions.table.gz (8/64/fopen): adding to final database dump
+0001.535 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/64/fopen): adding to final database dump
+0001.536 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_claims.table.gz (10/64/fopen): adding to final database dump
+0001.536 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_groups.table.tmpr4.gz (11/64/fopen): adding to final database dump
+0001.537 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_groups.table.gz (12/64/fopen): adding to final database dump
+0001.537 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_logs.table.tmpr983.gz (13/64/fopen): adding to final database dump
+0001.538 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_actionscheduler_logs.table.gz (14/64/fopen): adding to final database dump
+0001.538 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_commentmeta.table.tmpr0.gz (15/64/fopen): adding to final database dump
+0001.539 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_commentmeta.table.gz (16/64/fopen): adding to final database dump
+0001.539 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_comments.table.tmpr0.gz (17/64/fopen): adding to final database dump
+0001.540 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_comments.table.gz (18/64/fopen): adding to final database dump
+0001.540 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_links.table.tmpr0.gz (19/64/fopen): adding to final database dump
+0001.541 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_links.table.gz (20/64/fopen): adding to final database dump
+0001.541 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_postmeta.table.tmpr4100.gz (21/64/fopen): adding to final database dump
+0001.543 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_postmeta.table.gz (22/64/fopen): adding to final database dump
+0001.544 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_posts.table.tmpr657.gz (23/64/fopen): adding to final database dump
+0001.549 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_posts.table.gz (24/64/fopen): adding to final database dump
+0001.549 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_term_relationships.table.tmpr100001.gz (25/64/fopen): adding to final database dump
+0001.550 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_term_relationships.table.gz (26/64/fopen): adding to final database dump
+0001.551 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_term_taxonomy.table.tmpr37.gz (27/64/fopen): adding to final database dump
+0001.551 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_term_taxonomy.table.gz (28/64/fopen): adding to final database dump
+0001.552 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_termmeta.table.tmpr0.gz (29/64/fopen): adding to final database dump
+0001.553 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_termmeta.table.gz (30/64/fopen): adding to final database dump
+0001.553 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_terms.table.tmpr37.gz (31/64/fopen): adding to final database dump
+0001.554 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_terms.table.gz (32/64/fopen): adding to final database dump
+0001.554 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_aioseo_cache.table.tmpr0.gz (33/64/fopen): adding to final database dump
+0001.555 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_aioseo_cache.table.gz (34/64/fopen): adding to final database dump
+0001.555 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_asenha_failed_logins.table.tmpr0.gz (35/64/fopen): adding to final database dump
+0001.556 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_asenha_failed_logins.table.gz (36/64/fopen): adding to final database dump
+0001.556 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_db7_forms.table.tmpr1081.gz (37/64/fopen): adding to final database dump
+0001.559 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_db7_forms.table.gz (38/64/fopen): adding to final database dump
+0001.560 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_disclaimerInfor.table.tmpr0.gz (39/64/fopen): adding to final database dump
+0001.560 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_disclaimerInfor.table.gz (40/64/fopen): adding to final database dump
+0001.561 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_action_log.table.tmpr780.gz (41/64/fopen): adding to final database dump
+0001.562 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_action_log.table.gz (42/64/fopen): adding to final database dump
+0001.562 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_action_log_meta.table.gz (43/64/fopen): adding to final database dump
+0001.573 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_log.table.tmpr780.gz (44/64/fopen): adding to final database dump
+0001.577 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_log.table.gz (45/64/fopen): adding to final database dump
+0001.578 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_log_response.table.tmpr0.gz (46/64/fopen): adding to final database dump
+0001.578 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_log_response.table.gz (47/64/fopen): adding to final database dump
+0001.579 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_logs_view.table.tmpr1.gz (48/64/fopen): adding to final database dump
+0001.579 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_api_logs_view.table.gz (49/64/fopen): adding to final database dump
+0001.580 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_closure_log.table.tmpr0.gz (50/64/fopen): adding to final database dump
+0001.581 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_closure_log.table.gz (51/64/fopen): adding to final database dump
+0001.581 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_closure_log_meta.table.tmpr0.gz (52/64/fopen): adding to final database dump
+0001.582 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_closure_log_meta.table.gz (53/64/fopen): adding to final database dump
+0001.582 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_options.table.tmpr5181.gz (54/64/fopen): adding to final database dump
+0001.583 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_options.table.gz (55/64/fopen): adding to final database dump
+0001.583 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_count.table.tmpr3.gz (56/64/fopen): adding to final database dump
+0001.584 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_count.table.gz (57/64/fopen): adding to final database dump
+0001.584 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_log.table.tmpr790.gz (58/64/fopen): adding to final database dump
+0001.585 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_log.table.gz (59/64/fopen): adding to final database dump
+0001.586 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_log_meta.table.tmpr2358.gz (60/64/fopen): adding to final database dump
+0001.587 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_log_meta.table.gz (61/64/fopen): adding to final database dump
+0001.587 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_logs_view.table.tmpr1.gz (62/64/fopen): adding to final database dump
+0001.588 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_logs_view.table.gz (63/64/fopen): adding to final database dump
+0001.588 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_throttle_log.table.tmpr0.gz (64/64/fopen): adding to final database dump
+0001.589 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_recipe_throttle_log.table.gz (65/64/fopen): adding to final database dump
+0001.590 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_tokens_log.table.tmpr780.gz (66/64/fopen): adding to final database dump
+0001.593 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_tokens_log.table.gz (67/64/fopen): adding to final database dump
+0001.593 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_log.table.tmpr789.gz (68/64/fopen): adding to final database dump
+0001.594 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_log.table.gz (69/64/fopen): adding to final database dump
+0001.595 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_log_meta.table.tmpr6313.gz (70/64/fopen): adding to final database dump
+0001.603 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_log_meta.table.gz (71/64/fopen): adding to final database dump
+0001.603 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_logs_view.table.tmpr1.gz (72/64/fopen): adding to final database dump
+0001.604 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_uap_trigger_logs_view.table.gz (73/64/fopen): adding to final database dump
+0001.605 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfauditevents.table.tmpr20.gz (74/64/fopen): adding to final database dump
+0001.605 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfauditevents.table.gz (75/64/fopen): adding to final database dump
+0001.606 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfblockediplog.table.tmpr1001.gz (76/64/fopen): adding to final database dump
+0001.606 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfblockediplog.table.gz (77/64/fopen): adding to final database dump
+0001.607 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfblocks7.table.tmpr0.gz (78/64/fopen): adding to final database dump
+0001.608 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfblocks7.table.gz (79/64/fopen): adding to final database dump
+0001.608 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfconfig.table.tmpr1001.gz (80/64/fopen): adding to final database dump
+0001.629 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfconfig.table.gz (81/64/fopen): adding to final database dump
+0001.629 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfcrawlers.table.tmpr1001.gz (82/64/fopen): adding to final database dump
+0001.630 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfcrawlers.table.gz (83/64/fopen): adding to final database dump
+0001.631 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wffilechanges.table.tmpr1.gz (84/64/fopen): adding to final database dump
+0001.631 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wffilechanges.table.gz (85/64/fopen): adding to final database dump
+0001.632 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wffilemods.table.gz (86/64/fopen): adding to final database dump
+0001.662 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfhits.table.tmpr1890.gz (87/64/fopen): adding to final database dump
+0001.663 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfhits.table.gz (88/64/fopen): adding to final database dump
+0001.663 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfhoover.table.tmpr0.gz (89/64/fopen): adding to final database dump
+0001.664 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfhoover.table.gz (90/64/fopen): adding to final database dump
+0001.664 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfissues.table.tmpr2291.gz (91/64/fopen): adding to final database dump
+0001.665 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfissues.table.gz (92/64/fopen): adding to final database dump
+0001.665 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfknownfilelist.table.gz (93/64/fopen): adding to final database dump
+0001.670 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflivetraffichuman.table.tmpr1.gz (94/64/fopen): adding to final database dump
+0001.671 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflivetraffichuman.table.gz (95/64/fopen): adding to final database dump
+0001.671 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflocs.table.tmpr1.gz (96/64/fopen): adding to final database dump
+0001.672 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflocs.table.gz (97/64/fopen): adding to final database dump
+0001.672 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflogins.table.tmpr274.gz (98/64/fopen): adding to final database dump
+0001.673 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wflogins.table.gz (99/64/fopen): adding to final database dump
+0001.674 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_2fa_secrets.table.tmpr0.gz (100/64/fopen): adding to final database dump
+0001.675 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_2fa_secrets.table.gz (101/64/fopen): adding to final database dump
+0001.676 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_role_counts.table.tmpr1.gz (102/64/fopen): adding to final database dump
+0001.676 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_role_counts.table.gz (103/64/fopen): adding to final database dump
+0001.677 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_settings.table.tmpr1001.gz (104/64/fopen): adding to final database dump
+0001.677 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfls_settings.table.gz (105/64/fopen): adding to final database dump
+0001.678 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfnotifications.table.tmpr1.gz (106/64/fopen): adding to final database dump
+0001.679 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfnotifications.table.gz (107/64/fopen): adding to final database dump
+0001.679 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfpendingissues.table.tmpr0.gz (108/64/fopen): adding to final database dump
+0001.680 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfpendingissues.table.gz (109/64/fopen): adding to final database dump
+0001.680 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfreversecache.table.tmpr1001.gz (110/64/fopen): adding to final database dump
+0001.681 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfreversecache.table.gz (111/64/fopen): adding to final database dump
+0001.681 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfsecurityevents.table.tmpr0.gz (112/64/fopen): adding to final database dump
+0001.682 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfsecurityevents.table.gz (113/64/fopen): adding to final database dump
+0001.682 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfsnipcache.table.tmpr0.gz (114/64/fopen): adding to final database dump
+0001.683 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfsnipcache.table.gz (115/64/fopen): adding to final database dump
+0001.683 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfstatus.table.tmpr18827.gz (116/64/fopen): adding to final database dump
+0001.685 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfstatus.table.gz (117/64/fopen): adding to final database dump
+0001.685 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wftrafficrates.table.tmpr1.gz (118/64/fopen): adding to final database dump
+0001.686 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wftrafficrates.table.gz (119/64/fopen): adding to final database dump
+0001.686 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfwaffailures.table.tmpr0.gz (120/64/fopen): adding to final database dump
+0001.687 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wfwaffailures.table.gz (121/64/fopen): adding to final database dump
+0001.687 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wpmailsmtp_debug_events.table.tmpr48.gz (122/64/fopen): adding to final database dump
+0001.688 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wpmailsmtp_debug_events.table.gz (123/64/fopen): adding to final database dump
+0001.688 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr2.gz (124/64/fopen): adding to final database dump
+0001.689 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db-table-wp_wpmailsmtp_tasks_meta.table.gz (125/64/fopen): adding to final database dump
+0001.693 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db.gz: finished writing out complete database file (2564 KB)
+0001.730 (0) Total database tables backed up: 64 (backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db.gz, size: 2625665, sha1: 67043d317678988afda63253921f0de567b6124f, sha256: 9d0e8df974af1f7b699066754267695fef3a12bc83cf524db870b99686064e8b)
+0001.736 (0) backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.737 (0) Saving backup history. Total backup size: 2.5 MB
+0001.739 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.742 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0001.742 (0) No remote despatch: user chose no remote backup service
+0001.743 (0) Recording as successfully uploaded: backup_2025-11-20-0344_Tendas_Brasil_72dc7bff4bf4-db.gz
+0001.745 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0001.746 (0) Resume backup (72dc7bff4bf4, 0): finish run
+0001.747 (0) Decremented the semaphore (fd) by 1
+0001.748 (0) Semaphore (fd) unlocked
+0001.749 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0001.751 (0) No email will/can be sent - the user has not configured an email address.
+0001.752 (0) The backup succeeded and is now complete

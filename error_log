@@ -1,0 +1,510 @@
+[23-Nov-2025 11:13:26 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_recipe_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_recipe_logs_view AS SELECT 
+					r.ID AS recipe_log_id,
+					r.user_id,
+					r.date_time AS recipe_date_time,
+					r.completed AS recipe_completed,
+					r.run_number,
+					r.log_number,
+					r.completed,
+					r.automator_recipe_id,
+					u.user_email,
+					u.display_name,
+					p.post_title AS recipe_title
+				FROM wp_uap_recipe_log r
+				LEFT JOIN wp_users u
+					ON u.ID = r.user_id
+				JOIN wp_posts p
+					ON p.ID = r.automator_recipe_id made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[23-Nov-2025 11:13:26 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_trigger_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_trigger_logs_view AS SELECT u.ID AS user_id, u.user_email,
+				u.display_name,
+				t.automator_trigger_id,
+				t.date_time AS trigger_date,
+				t.completed AS trigger_completed,
+				t.automator_recipe_id,
+				t.ID,
+				pt.post_title AS trigger_title,
+				tm.meta_value AS trigger_sentence,
+				tm.run_number AS trigger_run_number,
+				tm.run_time AS trigger_run_time,
+				pm.meta_value AS trigger_total_times,
+				p.post_title AS recipe_title,
+				t.automator_recipe_log_id AS recipe_log_id,
+				r.date_time AS recipe_date_time,
+				r.completed AS recipe_completed,
+				r.run_number AS recipe_run_number
+			FROM wp_uap_trigger_log t
+			LEFT JOIN wp_users u
+			ON u.ID = t.user_id
+			LEFT JOIN wp_posts p
+			ON p.ID = t.automator_recipe_id
+			LEFT JOIN wp_posts pt
+			ON pt.ID = t.automator_trigger_id
+			LEFT JOIN wp_uap_trigger_log_meta tm
+			ON tm.automator_trigger_log_id = t.ID AND tm.meta_key = 'sentence_human_readable'
+			LEFT JOIN wp_uap_recipe_log r
+			ON t.automator_recipe_log_id = r.ID
+			LEFT JOIN wp_postmeta pm
+			ON pm.post_id = t.automator_trigger_id AND pm.meta_key = 'NUMTIMES' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[23-Nov-2025 11:13:26 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_api_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_api_logs_view AS SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				al.automator_recipe_log_id AS recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pa.post_title AS title,
+				asen.meta_value AS sentence,
+				al.automator_action_id as item_id,
+				al.completed AS completed,
+				al.error_message as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_action_log al
+				ON al.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON al.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = al.automator_recipe_id
+				JOIN wp_posts pa
+				ON pa.ID = al.automator_action_id
+				LEFT JOIN wp_uap_action_log_meta asen
+				ON asen.automator_action_log_id = al.ID AND asen.meta_key = 'sentence_human_readable_html'
+				LEFT JOIN wp_users u
+				ON al.user_id = u.ID
+				WHERE api.type = 'action'
+				UNION SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				tl.automator_recipe_log_id as recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pt.post_title AS title,
+				tsen.meta_value AS sentence,
+				tl.automator_trigger_id as item_id,
+				tl.completed AS completed,
+				'' as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_trigger_log tl
+				ON tl.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON tl.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = tl.automator_recipe_id
+				JOIN wp_posts pt
+				ON pt.ID = tl.automator_trigger_id
+				LEFT JOIN wp_uap_trigger_log_meta tsen
+				ON tsen.automator_trigger_log_id = tl.ID AND tsen.meta_key = 'sentence_human_readable'
+				LEFT JOIN wp_users u
+				ON tl.user_id = u.ID
+				WHERE api.type = 'trigger' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[24-Nov-2025 10:49:35 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_recipe_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_recipe_logs_view AS SELECT 
+					r.ID AS recipe_log_id,
+					r.user_id,
+					r.date_time AS recipe_date_time,
+					r.completed AS recipe_completed,
+					r.run_number,
+					r.log_number,
+					r.completed,
+					r.automator_recipe_id,
+					u.user_email,
+					u.display_name,
+					p.post_title AS recipe_title
+				FROM wp_uap_recipe_log r
+				LEFT JOIN wp_users u
+					ON u.ID = r.user_id
+				JOIN wp_posts p
+					ON p.ID = r.automator_recipe_id made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[24-Nov-2025 10:49:35 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_trigger_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_trigger_logs_view AS SELECT u.ID AS user_id, u.user_email,
+				u.display_name,
+				t.automator_trigger_id,
+				t.date_time AS trigger_date,
+				t.completed AS trigger_completed,
+				t.automator_recipe_id,
+				t.ID,
+				pt.post_title AS trigger_title,
+				tm.meta_value AS trigger_sentence,
+				tm.run_number AS trigger_run_number,
+				tm.run_time AS trigger_run_time,
+				pm.meta_value AS trigger_total_times,
+				p.post_title AS recipe_title,
+				t.automator_recipe_log_id AS recipe_log_id,
+				r.date_time AS recipe_date_time,
+				r.completed AS recipe_completed,
+				r.run_number AS recipe_run_number
+			FROM wp_uap_trigger_log t
+			LEFT JOIN wp_users u
+			ON u.ID = t.user_id
+			LEFT JOIN wp_posts p
+			ON p.ID = t.automator_recipe_id
+			LEFT JOIN wp_posts pt
+			ON pt.ID = t.automator_trigger_id
+			LEFT JOIN wp_uap_trigger_log_meta tm
+			ON tm.automator_trigger_log_id = t.ID AND tm.meta_key = 'sentence_human_readable'
+			LEFT JOIN wp_uap_recipe_log r
+			ON t.automator_recipe_log_id = r.ID
+			LEFT JOIN wp_postmeta pm
+			ON pm.post_id = t.automator_trigger_id AND pm.meta_key = 'NUMTIMES' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[24-Nov-2025 10:49:35 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_api_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_api_logs_view AS SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				al.automator_recipe_log_id AS recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pa.post_title AS title,
+				asen.meta_value AS sentence,
+				al.automator_action_id as item_id,
+				al.completed AS completed,
+				al.error_message as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_action_log al
+				ON al.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON al.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = al.automator_recipe_id
+				JOIN wp_posts pa
+				ON pa.ID = al.automator_action_id
+				LEFT JOIN wp_uap_action_log_meta asen
+				ON asen.automator_action_log_id = al.ID AND asen.meta_key = 'sentence_human_readable_html'
+				LEFT JOIN wp_users u
+				ON al.user_id = u.ID
+				WHERE api.type = 'action'
+				UNION SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				tl.automator_recipe_log_id as recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pt.post_title AS title,
+				tsen.meta_value AS sentence,
+				tl.automator_trigger_id as item_id,
+				tl.completed AS completed,
+				'' as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_trigger_log tl
+				ON tl.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON tl.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = tl.automator_recipe_id
+				JOIN wp_posts pt
+				ON pt.ID = tl.automator_trigger_id
+				LEFT JOIN wp_uap_trigger_log_meta tsen
+				ON tsen.automator_trigger_log_id = tl.ID AND tsen.meta_key = 'sentence_human_readable'
+				LEFT JOIN wp_users u
+				ON tl.user_id = u.ID
+				WHERE api.type = 'trigger' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[24-Nov-2025 16:04:47 UTC] Erro de evento de reagendamento do cron para o gancho: automator_wp_post_published_in_taxonomy_posts_published, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"every_minute","args":[],"interval":60}
+[24-Nov-2025 16:04:47 UTC] Erro de desativação de evento de cron para o gancho: automator_wp_post_published_in_taxonomy_posts_published, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"every_minute","args":[],"interval":60}
+[25-Nov-2025 10:33:06 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_recipe_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_recipe_logs_view AS SELECT 
+					r.ID AS recipe_log_id,
+					r.user_id,
+					r.date_time AS recipe_date_time,
+					r.completed AS recipe_completed,
+					r.run_number,
+					r.log_number,
+					r.completed,
+					r.automator_recipe_id,
+					u.user_email,
+					u.display_name,
+					p.post_title AS recipe_title
+				FROM wp_uap_recipe_log r
+				LEFT JOIN wp_users u
+					ON u.ID = r.user_id
+				JOIN wp_posts p
+					ON p.ID = r.automator_recipe_id made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[25-Nov-2025 10:33:06 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_trigger_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_trigger_logs_view AS SELECT u.ID AS user_id, u.user_email,
+				u.display_name,
+				t.automator_trigger_id,
+				t.date_time AS trigger_date,
+				t.completed AS trigger_completed,
+				t.automator_recipe_id,
+				t.ID,
+				pt.post_title AS trigger_title,
+				tm.meta_value AS trigger_sentence,
+				tm.run_number AS trigger_run_number,
+				tm.run_time AS trigger_run_time,
+				pm.meta_value AS trigger_total_times,
+				p.post_title AS recipe_title,
+				t.automator_recipe_log_id AS recipe_log_id,
+				r.date_time AS recipe_date_time,
+				r.completed AS recipe_completed,
+				r.run_number AS recipe_run_number
+			FROM wp_uap_trigger_log t
+			LEFT JOIN wp_users u
+			ON u.ID = t.user_id
+			LEFT JOIN wp_posts p
+			ON p.ID = t.automator_recipe_id
+			LEFT JOIN wp_posts pt
+			ON pt.ID = t.automator_trigger_id
+			LEFT JOIN wp_uap_trigger_log_meta tm
+			ON tm.automator_trigger_log_id = t.ID AND tm.meta_key = 'sentence_human_readable'
+			LEFT JOIN wp_uap_recipe_log r
+			ON t.automator_recipe_log_id = r.ID
+			LEFT JOIN wp_postmeta pm
+			ON pm.post_id = t.automator_trigger_id AND pm.meta_key = 'NUMTIMES' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[25-Nov-2025 10:33:06 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_api_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_api_logs_view AS SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				al.automator_recipe_log_id AS recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pa.post_title AS title,
+				asen.meta_value AS sentence,
+				al.automator_action_id as item_id,
+				al.completed AS completed,
+				al.error_message as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_action_log al
+				ON al.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON al.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = al.automator_recipe_id
+				JOIN wp_posts pa
+				ON pa.ID = al.automator_action_id
+				LEFT JOIN wp_uap_action_log_meta asen
+				ON asen.automator_action_log_id = al.ID AND asen.meta_key = 'sentence_human_readable_html'
+				LEFT JOIN wp_users u
+				ON al.user_id = u.ID
+				WHERE api.type = 'action'
+				UNION SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				tl.automator_recipe_log_id as recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pt.post_title AS title,
+				tsen.meta_value AS sentence,
+				tl.automator_trigger_id as item_id,
+				tl.completed AS completed,
+				'' as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_trigger_log tl
+				ON tl.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON tl.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = tl.automator_recipe_id
+				JOIN wp_posts pt
+				ON pt.ID = tl.automator_trigger_id
+				LEFT JOIN wp_uap_trigger_log_meta tsen
+				ON tsen.automator_trigger_log_id = tl.ID AND tsen.meta_key = 'sentence_human_readable'
+				LEFT JOIN wp_users u
+				ON tl.user_id = u.ID
+				WHERE api.type = 'trigger' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[26-Nov-2025 10:27:42 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_recipe_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_recipe_logs_view AS SELECT 
+					r.ID AS recipe_log_id,
+					r.user_id,
+					r.date_time AS recipe_date_time,
+					r.completed AS recipe_completed,
+					r.run_number,
+					r.log_number,
+					r.completed,
+					r.automator_recipe_id,
+					u.user_email,
+					u.display_name,
+					p.post_title AS recipe_title
+				FROM wp_uap_recipe_log r
+				LEFT JOIN wp_users u
+					ON u.ID = r.user_id
+				JOIN wp_posts p
+					ON p.ID = r.automator_recipe_id made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[26-Nov-2025 10:27:42 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_trigger_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_trigger_logs_view AS SELECT u.ID AS user_id, u.user_email,
+				u.display_name,
+				t.automator_trigger_id,
+				t.date_time AS trigger_date,
+				t.completed AS trigger_completed,
+				t.automator_recipe_id,
+				t.ID,
+				pt.post_title AS trigger_title,
+				tm.meta_value AS trigger_sentence,
+				tm.run_number AS trigger_run_number,
+				tm.run_time AS trigger_run_time,
+				pm.meta_value AS trigger_total_times,
+				p.post_title AS recipe_title,
+				t.automator_recipe_log_id AS recipe_log_id,
+				r.date_time AS recipe_date_time,
+				r.completed AS recipe_completed,
+				r.run_number AS recipe_run_number
+			FROM wp_uap_trigger_log t
+			LEFT JOIN wp_users u
+			ON u.ID = t.user_id
+			LEFT JOIN wp_posts p
+			ON p.ID = t.automator_recipe_id
+			LEFT JOIN wp_posts pt
+			ON pt.ID = t.automator_trigger_id
+			LEFT JOIN wp_uap_trigger_log_meta tm
+			ON tm.automator_trigger_log_id = t.ID AND tm.meta_key = 'sentence_human_readable'
+			LEFT JOIN wp_uap_recipe_log r
+			ON t.automator_recipe_log_id = r.ID
+			LEFT JOIN wp_postmeta pm
+			ON pm.post_id = t.automator_trigger_id AND pm.meta_key = 'NUMTIMES' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views
+[26-Nov-2025 10:27:42 UTC] WordPress database error 'tendasbrasil_uebb-ws2025-antigo.wp_uap_api_logs_view' is not of type 'VIEW' for query CREATE OR REPLACE VIEW wp_uap_api_logs_view AS SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				al.automator_recipe_log_id AS recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pa.post_title AS title,
+				asen.meta_value AS sentence,
+				al.automator_action_id as item_id,
+				al.completed AS completed,
+				al.error_message as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_action_log al
+				ON al.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON al.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = al.automator_recipe_id
+				JOIN wp_posts pa
+				ON pa.ID = al.automator_action_id
+				LEFT JOIN wp_uap_action_log_meta asen
+				ON asen.automator_action_log_id = al.ID AND asen.meta_key = 'sentence_human_readable_html'
+				LEFT JOIN wp_users u
+				ON al.user_id = u.ID
+				WHERE api.type = 'action'
+				UNION SELECT
+				api.ID,
+				api.date_time AS date,
+				u.user_email,
+				u.display_name,
+				u.ID AS user_id,
+				pr.post_title AS recipe_title,
+				rl.automator_recipe_id,
+				tl.automator_recipe_log_id as recipe_log_id,
+				rl.date_time AS recipe_date_time,
+				rl.completed AS recipe_completed,
+				rl.run_number AS recipe_run_number,
+				pt.post_title AS title,
+				tsen.meta_value AS sentence,
+				tl.automator_trigger_id as item_id,
+				tl.completed AS completed,
+				'' as error_message,
+				api.type,
+				api.item_log_id,
+				api.status,
+				api.params,
+				api.price,
+				api.balance,
+				api.notes,
+				api.time_spent,
+				api.endpoint
+				FROM wp_uap_api_log api
+				LEFT JOIN wp_uap_trigger_log tl
+				ON tl.ID = api.item_log_id
+				LEFT JOIN wp_uap_recipe_log rl
+				ON tl.automator_recipe_log_id = rl.ID
+				LEFT JOIN wp_posts pr
+				ON pr.ID = tl.automator_recipe_id
+				JOIN wp_posts pt
+				ON pt.ID = tl.automator_trigger_id
+				LEFT JOIN wp_uap_trigger_log_meta tsen
+				ON tsen.automator_trigger_log_id = tl.ID AND tsen.meta_key = 'sentence_human_readable'
+				LEFT JOIN wp_users u
+				ON tl.user_id = u.ID
+				WHERE api.type = 'trigger' made by do_action_ref_array('automator_daily_healthcheck'), WP_Hook->do_action, WP_Hook->apply_filters, Uncanny_Automator\Automator_DB::fix_automator_db_tables, Uncanny_Automator\Automator_DB::verify_base_tables, Uncanny_Automator\Automator_DB::create_views

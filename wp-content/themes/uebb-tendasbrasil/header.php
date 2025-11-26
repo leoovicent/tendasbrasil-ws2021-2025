@@ -151,6 +151,10 @@
     </div>
   </div>
   <!-- end modal typebot -->
+  
+  <!-- start uebb popup -->
+  <?php echo do_shortcode("[uebb-popup]"); ?>
+  <!-- end uebb popup -->
 
 	<!-- start header -->
 	<header>
